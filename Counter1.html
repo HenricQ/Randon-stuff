@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css1.css">
+    <script href='Contador.js'></script>
+</head>
+<body>
+    <div id="d1" class="Center1">
+        <h2 >Contador</h2>
+
+        <h1 id="contar" data="Number">0</h1>
+
+        <button onclick="r()" id="ai"     >-1</button>
+        <button onclick="reset()"   >Reset</button>
+        <button onclick="a()"       >+1</button>
+        <button onclick="toto()" id="tt"  >2 em 2</button>
+    </div>
+    <script>
+        let cnt = document.getElementById('contar')
+        let a0 = Number = 0 
+        let am1 = Number = -1
+        let a1 = Number = 1
+
+    function r(){
+        cnt.innerHTML = a0 -= a1
+    }
+
+    function a(){
+        cnt.innerHTML = a0 += a1
+    }
+
+    function reset(){
+        cnt.innerHTML = a0 = 0
+    }
+
+    function toto(){
+        let tbt = document.getElementById('tt')
+        if (tbt.style.display === "none") {
+    tbt.style.display = 'block';
+  } else {
+    tbt.style.display = "none";
+  }
+}
+    
+
+        </script>
+</body>
+</html>
